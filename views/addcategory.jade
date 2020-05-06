@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1=title
+    form(method='post',action='/category/add')
+        .form-group
+            label Category name:
+            input.form-control(name='name',type='text')
+        input.btn.btn-default(name='submit',type='submit',value='Add Category')

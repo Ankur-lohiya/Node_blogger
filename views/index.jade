@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  if posts
+    each post, i in posts
+      .post
+        h1
+          a(href='/post/show/#{post._id}')
+            =post.title
+        p.meta Posted in 
+          a(href='/category/show/#{post.category}') #{post.category} 
+          by #{post.author} 
+          on #{moment(post.date).format("MM-DD-YYYY")}
+        div.image
+          img(src='/images/#{post.mainimage}',height='500vh',width='800vw')
+        !=truncateText(post.body,400) 
+        a.more(href='/post/show/#{post._id}')  Read More>>

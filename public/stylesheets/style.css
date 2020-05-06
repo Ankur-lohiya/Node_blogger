@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+nav li:hover{
+  background-color: darkgreen;
+}
+
+div.image{
+  text-align: center;
+}
+.comment{
+  border:1.5px Solid black;
+  margin:3px;
+  padding-left: 10px;
+}
