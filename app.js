@@ -53,7 +53,7 @@ app.use('/', indexRouter);
 app.use('/post', postsRouter);
 app.use('/category',categoryRouter);
 
-app.listen(5000,function(){
+app.listen(3000,function(){
   console.log('Listening on port 5000');
 });
 module.exports = app;
